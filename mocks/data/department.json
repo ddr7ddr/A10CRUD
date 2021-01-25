@@ -1,0 +1,95 @@
+{
+    "department" :
+
+{
+    "errcode": 0,
+    "errmsg": "ok",
+    "department": [
+        {
+            "id": 1,
+            "name": "成都黑林根家居有限公司",
+            "parentid": 0,
+            "order": 100000000
+        },
+        {
+            "id": 2,
+            "name": "动物交响团",
+            "parentid": 15,
+            "order": 100000000
+        },
+        {
+            "id": 9,
+            "name": "营销部",
+            "parentid": 1,
+            "order": 100001000
+        },
+        {
+            "id": 10,
+            "name": "商品部",
+            "parentid": 1,
+            "order": 100000000
+        },
+        {
+            "id": 11,
+            "name": "设计陈列部",
+            "parentid": 1,
+            "order": 99999000
+        },
+        {
+            "id": 12,
+            "name": "财务部",
+            "parentid": 1,
+            "order": 99998000
+        },
+        {
+            "id": 13,
+            "name": "人事行政法务部",
+            "parentid": 1,
+            "order": 99997000
+        },
+        {
+            "id": 14,
+            "name": "系统部",
+            "parentid": 1,
+            "order": 99996000
+        },
+        {
+            "id": 15,
+            "name": "门店",
+            "parentid": 9,
+            "order": 100001000
+        },
+        {
+            "id": 16,
+            "name": "品牌管理部",
+            "parentid": 1,
+            "order": 99995000
+        },
+        {
+            "id": 17,
+            "name": "物流部",
+            "parentid": 1,
+            "order": 99994000
+        },
+        {
+            "id": 18,
+            "name": "流量",
+            "parentid": 9,
+            "order": 100000000
+        },
+        {
+            "id": 19,
+            "name": "销售",
+            "parentid": 9,
+            "order": 99999000
+        },
+        {
+            "id": 20,
+            "name": "线上运营",
+            "parentid": 9,
+            "order": 99998000
+        }
+    ]
+}
+
+}

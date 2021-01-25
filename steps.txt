@@ -1,0 +1,57 @@
+第一步: 创造Json Server用于模拟后端API: 
+https://kaustubhtalathi.medium.com/mock-data-for-angular-5-applications-with-json-server-part-1-d377eced223b
+
+npm install json-server -save-dev
+修改package.json文件，添加
+    "e2e": "ng e2e",
+    "mock:server": "json-server --watch mocks/data.json",
+
+npm install json-concat -save-dev
+在项目根目录下创建mocks文件夹，在data文件夹放入要测试的json文件
+修改concat-json.js文件，在mock:server下面添加
+    "mock:server": "json-server --watch mocks/data.json",
+    "concat:mocks": "node \"./mocks/concat-json.js\""
+或者在CONSOLE里面直接运行json-server --watch mocks\data\people.json
+
+运行 npm run concat:mocks 用于合并JSON，然后运行 npm run mock:server 启动API服务
+启动后的服务如下：
+  Resources
+  http://localhost:3000/people
+  http://localhost:3000/planets
+  http://localhost:3000/starships
+  
+
+第二步: create services and components
+ng generate service services/people
+ng g c components/people-create
+ng g c components/people-details
+ng g c components/people-list
+
+以下步骤参考https://www.techiediaries.com/angular-10-crud-example-web-api/
+
+第三步：在app.module.ts引入（Importing）FormsModule and HttpClientModule
+
+第四部：在app-routing.module.ts 为CRUD Components加入路由（Routes）
+
+第五步：安装ANGULAR MATERIAL或BOOSTRAP，并在app.component.html添加路由链接
+ng add @angular/material
+1. 选主题 2.选排版 3.选动画
+ng add @angular/cdk 安装使用SCHEMATICS以减少手工代码输入量
+ng generate @angular/material:dashboard 生成一个dashboard
+ng generate @angular/material:navigation nevigation 生成一个导航
+在nevigation.component.html里建立导航（路由的链接）
+
+中间步骤：创建INTERFACE
+ng g class model/people --type=model
+安装VS CODE的EXTENSION：Json to ts
+复制创建INTERFACE
+
+第六步：创建Angular 10 CRUD服务
+引入INTERFACE
+
+第七步： 在不同的部件（Components）中使用CRUD
+1. 创建用户
+
+
+
+*如果引用了出现BUG，则关闭服务重启
